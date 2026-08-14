@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import Loading from './Loading'
-import { ThermometerIcon, UmbrellaIcon, PalmTreeIcon, PlusIcon } from 'lucide-react'
+import Loading from '../components/Loading'
+import { ThermometerIcon, UmbrellaIcon, TreePalm, PlusIcon } from 'lucide-react'
 import { dummyLeaveData } from '../data/dummyData'
-import LeaveHistory from '../leave/LeaveHistory'
-import ApplyLeaveModal from '../leave/ApplyLeaveModal'
+import LeaveHistory from '../components/leave/LeaveHistory'
+import ApplyLeaveModal from '../components/leave/ApplyLeaveModal'
 
 const Leave = () => {
     const [leaves, setLeaves] = useState([])
@@ -33,7 +33,7 @@ const Leave = () => {
     const leaveStats = [
         { label: "Sick Leaves", value: sickCount, icon: ThermometerIcon },
         { label: "Casual Leaves", value: casualCount, icon: UmbrellaIcon },
-        { label: "Annual Leaves", value: annualCount, icon: PalmTreeIcon },
+        { label: "Annual Leaves", value: annualCount, icon: TreePalm },
     ]
 
     return (
