@@ -1,5 +1,5 @@
-import AttendanceHistory from "./AttendanceHistory";
-import AttendanceStats from "./AttendanceStats";
+import AttendanceHistory from "../components/AttendanceHistory";
+import AttendanceStats from "../components/AttendanceStats";
 
 const Attendance = () => {
     Const [history, setHistory] = useState([]);
